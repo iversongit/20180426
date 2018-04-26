@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示所有学生的全部信息</title>
+</head>
+<body>
+    {% for stu in stus %}
+        s_id:{{ stu.id }}
+        s_name:{{ stu.s_name }}
+        s_sex:{{ stu.s_sex }}
+        s_age:{{ stu.s_age }}
+        s_school:{{ stu.s_school }}
+        <br>
+    {% endfor %}
+     {% for extinfo in extinfos %}
+         e_addr:{{ extinfo.e_addr }}
+         e_tel:{{ extinfo.e_tel }}
+         s_id:{{ extinfo.s_id }}
+         <br>
+     {% endfor %}
+    <a href="/stuapp/addstu">返回添加页面</a>
+</body>
+</html>

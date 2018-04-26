@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+     显示所有学生信息
+{% endblock %}
+
+{% block contains %}
+    {% for s in ss %}
+        学生id:{{ s.id }}
+        学生姓名:{{ s.s_name }}
+        <a href="/stuapp/delstu/?stu_id={{ s.id }}">删除{{ s.s_name }}</a>
+        <a href="/stuapp/upstu/?stu_id={{ s.id }}">修改{{ s.s_name }}</a>
+        <br>
+    {%  endfor %}
+{% endblock %}

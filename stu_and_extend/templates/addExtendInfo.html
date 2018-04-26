@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加学生扩展信息</title>
+</head>
+<body>
+
+    <form action="/extendapp/addextend/{{ s_id }}" method="post">
+        <table>
+            <tr>
+                <td>地址</td>
+                <td>电话</td>
+                <td>生日</td>
+                <td>自我介绍</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="e_addr"></td>
+                <td><input type="text" name="e_tel"></td>
+                <td><input type="text" name="e_birth"></td>
+                <td><input type="text" name="e_des"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
