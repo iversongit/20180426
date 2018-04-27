@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加学生基本信息</title>
+</head>
+<body>
+    <form action="/stuapp/addstu" method="post">
+        <table>
+            <tr>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>年龄</td>
+                <td>学校</td>
+                <td>创建时间</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="s_name"></td>
+                <td><input type="text" name="s_sex"></td>
+                <td><input type="text" name="s_age"></td>
+                <td><input type="text" name="s_school"></td>
+                <td><input type="date" name="s_create_time"></td>
+            </tr>
+        </table>
+            <br>
+        <input type="submit" value="下一步">
+    </form>
+</body>
+</html>
